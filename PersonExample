@@ -10,13 +10,22 @@ class Person {
     this.name = "";
   }
   
+  
   //Best practice says we need "getters" and "setters" in 
-  //order to change or retrieve the "name" attribute
+  //order to change or retrieve the "name" attribute of
+  //an object ((in this case, the Person object))
+  
+  //Getter
   getName() {
+    //"return" is the keyword that makes sure a value or
+    //object is given back to where this function was called
     return this.name;
   }
   
+  //Setter
   setName(newName) {
+    //"this.name" needs to be updated to the "newName" that
+    //was passed in to the setter
     this.name = newName;
   }
 }
