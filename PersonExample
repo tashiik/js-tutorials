@@ -1,0 +1,16 @@
+class Person {
+  constructor() {
+    this.name = "";
+  }
+  
+  getName() {
+    return this.name;
+  }
+  
+  setName(newName) {
+    this.name = newName;
+  }
+}
+
+var p = new Person();
+p.setName("Bob");
