@@ -1,8 +1,17 @@
+//We want to create an object called Person,
+//so we create a new class, Person, and that will be
+//our object.
 class Person {
+  //"constructor" is a keyword that JS knows to call when
+  //we create a: new Person();
   constructor() {
+    //"this.name" initializes the "name" attribute of the
+    //Person object
     this.name = "";
   }
   
+  //Best practice says we need "getters" and "setters" in 
+  //order to change or retrieve the "name" attribute
   getName() {
     return this.name;
   }
@@ -12,5 +21,8 @@ class Person {
   }
 }
 
+//We are now outside of the Person object
+//We create a new Person and change the Person's name
+//to "Bob"
 var p = new Person();
 p.setName("Bob");
